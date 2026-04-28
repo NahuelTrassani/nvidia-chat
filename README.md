@@ -1,21 +1,75 @@
-<<<<<<< HEAD
-# React + Vite
+# 🤖 NVIDIA Chat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chatbot interactivo construido con **React + Vite** que consume la API de NVIDIA para chatear con modelos de lenguaje como **Llama 3.1 8B Instruct**.
 
-Currently, two official plugins are available:
+Proyecto de práctica enfocado en el uso de **React Hooks** modernos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React 19](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [NVIDIA NIM API](https://build.nvidia.com/) — compatible con la API de OpenAI
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# nvidia-chat
-Elige un modelo de nvidia u opencode para chatear
->>>>>>> 70e40145be4fab7de7be18e75e4a2443e2ce45d5
+## 🧠 Hooks practicados
+
+| Hook | Uso |
+|------|-----|
+| `useState` | Manejo de mensajes e input del usuario |
+| `useEffect` | Scroll automático al último mensaje |
+| `useRef` | Referencia al contenedor del chat |
+| `useCallback` | Función de envío optimizada |
+
+---
+
+## ⚙️ Instalación
+
+```bash
+git clone https://github.com/NahuelTrassani/nvidia-chat
+cd nvidia-chat
+npm install
+```
+
+Creá un archivo `.env` en la raíz del proyecto:
+
+```
+VITE_NVIDIA_API_KEY=tu_api_key_aquí
+```
+
+Luego levantá el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🔑 Obtener API Key
+
+1. Entrá a [build.nvidia.com](https://build.nvidia.com)
+2. Seleccioná el modelo **Llama 3.1 8B Instruct**
+3. Generá tu API Key gratuita
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+nvidia-chat/
+├── src/
+│   ├── components/
+│   │   └── Chat.jsx
+│   ├── App.jsx
+│   └── main.jsx
+├── .env
+└── index.html
+```
+
+---
+
+## 👤 Autor
+
+**Nahuel Trassani** — [GitHub](https://github.com/NahuelTrassani)
